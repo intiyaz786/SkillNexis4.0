@@ -4,15 +4,15 @@ print("Student Email List")
 print("-" * 30)
 
 with open("students.csv", "r") as file:
-    reader = csv.DictReader(file)
+    reader=csv.DictReader(file)
 
     for row in reader:
-        name = row["Name"]
-        email = row["Email"]
+        name=row["Name"]
+        email=row["Email"]
 
-        subject = "Python Internship Update"
+        subject="Python Internship Update"
 
-        message = f"""
+        message=f"""
 Hello {name},
 
 Congratulations!
@@ -23,8 +23,8 @@ Best Regards,
 Training Team
 """
 
-        print("To:", email)
-        print("Subject:", subject)
+        print("To:",email)
+        print("Subject:",subject)
         print(message)
         print("-" * 30)
 
